@@ -99,14 +99,12 @@ h4 {
 }
 
 .edit-btn {
-  margin-top: 2rem;
+  margin: 2rem 1rem;
   max-width: 22rem;
   border-radius: 16px;
   border: none;
   height: 2.7rem;
   width: 100%;
-  margin-left: 1rem;
-  margin-right: 1rem;
   font-size: 1rem;
   background-color: #df830ba1;
   color: rgb(255, 255, 255);
