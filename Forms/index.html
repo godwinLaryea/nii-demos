@@ -1,1 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<form action="#" method="post" autocomplete="on">
+		<div class="form-wrapper">
+			<fieldset>
+				<legend>Job Application</legend>
+
+				<div>
+					<label for="name">Full Name:</label>
+					<input type="text" name="name" id="name" placeholder="Enter your full name">
+				</div>
+
+				<div>
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" placeholder="Enter your email">
+				</div>
+
+				<div>
+					<label for="password">Password:</label>
+					<input type="password" id="password" name="password">
+				</div>
+
+
+				<div>
+					<label for="dob">Date of birth:</label>
+					<input type="date" name="dob" id="dob">
+				</div>
+
+				<div>
+					<label for="gender" id="gender">Gender</label>
+					<input type="radio" id="mgender" name="gender" value="male">Male
+					<input type="radio" id="fgender" name="gender" value="female">Female
+					<input type="radio" id="nogender" name="gender" value="none">Prefer not to answer
+				</div>
+
+				<div>
+					<label for="file">Upload Resume</label>
+					<input type="file" id="file" accept=".docx, .pdf, .html" multiple>
+				</div>
+
+				<div>
+					<label for="skills">Skills</label>
+					<textarea id="skills" cols="35" rows="8" maxlength="240" placeholder="List skills here"></textarea>
+				</div>
+
+				<div>
+					<label for="job-role">Job Role</label>
+					<select name="job-role" id="job-role">
+						<option value="#"></option>
+						<option value="Frontend">Frontend Developer</option>
+						<option value="Frontend">Backend Developer</option>
+						<option value="Frontend">Fullstack</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="experience">Experience Level: </label>
+					<input type="text" name="experience" id="experience">
+				</div>
+
+				<div>
+					<label for="salary">Expected Salary ($): </label>
+					<input type="range" id="salary" min="2500" max="5000"> 5000
+				</div>
+
+				<div>
+					<label for="agreement">Sign Here</label>
+					<input type="checkbox" id="agreement" required>I agree to the terms and conditions.
+				</div>
+
+				<div class="submit-btn">
+					<input type="submit" value="Submit Application">
+					<input type="button" value="Reset">
+				</div>
+
+			</fieldset>
+		</div>
+
+	</form>
+
+</body>
+
+</html>
